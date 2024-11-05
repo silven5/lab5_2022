@@ -1,0 +1,32 @@
+.header {
+  height: var(--hegth-header);
+  /* Лінія під меню */
+  border-top: 1px solid var(--color-ligth-grey);
+}
+/* Задаємо зашальні властивості картинок */
+.header_img {
+  width: var(--img);
+  height: var(--img);
+  mix-blend-mode: overlay;
+}
+/* Заголовок */
+.header_h1 {
+  font-size: var(--font-size-h1);
+  font-family: var(--font-family-h);
+  max-width: 1220px;
+  color: var(--color-ligth-grey);
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  margin-top: -200px;
+}
+/* Картинка зліва */
+.header_img__left {
+  background: url(../img/Basilisk_left.png) no-repeat;
+  background-size: cover;
+}
+/* Права картинка */
+.header_img__rigth {
+  background: url(../img/Basilisk_rigth.png) no-repeat;
+  background-size: cover;
+}

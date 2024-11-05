@@ -1,0 +1,74 @@
+@import url(base.css);
+@import url(reset.css);
+@import url(menu.css);
+@import url(header.css);
+@import url(sidebar.css);
+@import url(content.css);
+@import url(footert.css);
+@import url(media.css);
+body {
+  /* Сайт по центру ектрану */
+  margin: auto;
+  /* Максимальна ширина сайту */
+  max-width: var(--width);
+}
+.container {
+  /* Максимальна ширина контейнеру */
+  max-width: var(--width);
+  /* Фоновий колір */
+  background-color: var(--color-pink);
+  /* Колір тексту */
+  color: var(--color-grey);
+  /* Шрифт тексту */
+  font-family: var(--font-family-text);
+  /* Розмір тексту */
+  font-size: var(--font-size-p);
+}
+.text__border {
+  /* Обводка тексту відповідно до макету */
+  text-shadow: 1px 0 1px var(--color-grey), 0 1px 1px var(--color-grey),
+    -1px 0 1px var(--color-grey), 0 -1px 1px var(--color-grey);
+}
+.h2 {
+  font-family: var(--font-family-h);
+  font-size: var(--font-size-h2);
+  color: var(--color-ligth-grey);
+  font-weight: bold;
+  padding-top: 28px;
+  padding-left: 28px;
+  text-align: center;
+}
+.p {
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-p);
+  color: var(--color-grey);
+  padding-top: 50px;
+  padding-left: 50px;
+}
+/*! Класи для адаптивності */
+/* Флекс */
+.flex {
+  display: flex;
+  gap: 10px;
+}
+/* Дозвіл переносити на наступний рядок */
+.flex_wrap {
+  flex-wrap: wrap;
+}
+/* Вирівнювання */
+/* По вертикалі */
+.flex_align__center {
+  align-items: center;
+}
+/* По горизонталі */
+.flex_justify_center {
+  justify-content: center;
+}
+/* ?Флекс з рядками */
+.flex_column {
+  flex-direction: column;
+}
+/* ? Особливе вирівнювання для заголовку */
+.flex_justify_space {
+  justify-content: space-between;
+}

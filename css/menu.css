@@ -1,0 +1,81 @@
+.menu {
+  height: var(--heigth-menu);
+  /* Типографіка */
+  font-family: var(--font-family-h);
+  font-size: var(--font-size-menu);
+  font-weight: bold;
+  /* Задаємо відступи між пунктами меню */
+  gap: 30px;
+}
+/* Стилі для окремого пункту */
+.menu a {
+  color: var(--color-ligth-grey);
+}
+/* Зміни при наведені */
+.menu a:hover {
+  /* Змінюємо колір */
+  color: var(--color-grey);
+  /* Додаємо підкреслення */
+  text-decoration: underline;
+}
+/* !Гамбургер меню */
+.menu__burger {
+  /* Зменшуємо шрифт на 60% */
+  font-size: calc(var(--font-size-menu) * 0.6);
+  width: 300px;
+  /* Робимо його небачним */
+  visibility: hidden;
+  height: 0px;
+}
+.menu_item_box {
+  visibility: hidden;
+  height: 0px;
+}
+/*  !Кнопка у вигляді трьох ліній*/
+.menu_btn {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 1;
+}
+/* Три лінії */
+.menu_btn > span,
+.menu_btn > span::before,
+.menu_btn > span::after {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #616161;
+  transition-duration: 0.25s;
+}
+/* Розміщуємо лінію зверху*/
+.menu_btn > span::before {
+  content: "";
+  top: -8px;
+}
+/* Розміщуємо лінію знизу */
+.menu_btn > span::after {
+  content: "";
+  top: 8px;
+}
+/* Прибираємо стандартний перемикач */
+#menu-toggle {
+  opacity: 0;
+}
+/* !Правила для активації чекбоксу */
+/* Змінюємо рисочки на хрестик 
+за допомогою повороту на 45 градусів */
+#menu-toggle:checked ~ .menu_btn > span {
+  transform: rotate(45deg);
+}
+/* Середню лінію прибираємо */
+#menu-toggle:checked ~ .menu_btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+/* Третю лінію обертаємо на 90 градусів */
+#menu-toggle:checked ~ .menu_btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}

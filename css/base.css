@@ -1,0 +1,38 @@
+/*Імпортуємо шрифти з Google Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap");
+/* Підкоючаємо шрифт який завантажили у папку Fonts */
+@font-face {
+  font-family: "KyivTypeSerif";
+  src: url("Fonts/KyivTypeSerif-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Визначаємо каcтомні властивості для кольорів, шрифтів та їх розмірів, розмірів сайту,відступи*/
+:root {
+  /* Кольори */
+  --color-pink: #ffccff;
+  --color-ligth-grey: #afafaf;
+  --color-grey: #4a4848;
+  /*Шрифти та їх розміри */
+  --font-family-h: "Cormorant Infant";
+  --font-family-text: "KyivTypeSerif";
+  --font-size-h1: 64px;
+  --font-size-h2: 36px;
+  --font-size-menu: 28px;
+  --font-size-sidebar: 24px;
+  --font-size-p: 22px;
+  /* Розміри сайту */
+  --width: 1440px;
+  --width-sidebar: 440px;
+  --width-main: 1000px;
+  --heigth-menu: 100px;
+  --hegth-header: 250px;
+  --heigth-footer: 70px;
+  --img: 250px;
+  --img-hover: 300px;
+  /*Відступи */
+  /* Відстань з лівого краю для меню та заголовку */
+  --padding-left: 120px;
+  /*Поля для текстових блоків */
+  --padding-text: 50px;
+}

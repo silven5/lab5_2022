@@ -1,0 +1,10 @@
+.sidebar {
+  max-width: var(--width-sidebar);
+  /* Максимальна висота відповідно до макету */
+  max-height: 1920px;
+  align-self: flex-start;
+}
+.sidebar_p {
+  text-align: center;
+  padding: 28px 28px 28px 28px;
+}
